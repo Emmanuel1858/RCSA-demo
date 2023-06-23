@@ -1,15 +1,16 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import Vue from "vue";
+import VueRouter  from 'vue-router'
 import LoginPage from "../components/LoginPage.vue"
 import About from "../views/AboutView.vue"
 import NextPage from "../views/NextPage.vue"
 import SummaryPage from "../views/SummaryPage.vue"
 import RecruitmentTrain from '../views/RecruitmentTrain.vue'
 
-
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
+    path: '',
     name: 'home',
     component: LoginPage
 
@@ -40,9 +41,9 @@ const routes = [
   }
 ]
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
+const router = new VueRouter({
+  // history: VueRouter.createWebHashHistory(),
+  routes // short for `routes: routes`
 })
 
 export default router

@@ -1,35 +1,35 @@
 <template>
 
   <div>
-    <router-view/>  
+    <router-view></router-view>
   <!-- <Login/> -->
-  <LoginPage/>
+  <!-- <LoginPage/>
   <AboutView/>
   <NextPage/>
   <SummaryPage/>
   <RecruitmentTrain/>
-  <ToastedMessage/>
+  <ToastedMessage/> -->
   </div>
 
   
 </template>
 
 <script>
-import LoginPage from './components/LoginPage.vue';
-import AboutView from './views/AboutView.vue';
-import NextPage from './views/NextPage.vue';
-import SummaryPage from './views/SummaryPage.vue';
-import RecruitmentTrain from './views/RecruitmentTrain.vue';
-import ToastedMessage from './components/ToastedMessage.vue';
+// import LoginPage from './components/LoginPage.vue';
+// import AboutView from './views/AboutView.vue';
+// import NextPage from './views/NextPage.vue';
+// import SummaryPage from './views/SummaryPage.vue';
+// import RecruitmentTrain from './views/RecruitmentTrain.vue';
+// import ToastedMessage from './components/ToastedMessage.vue';
 export default{
   name: "App",
   components: {
-    LoginPage,
-    AboutView,
-    NextPage,
-    SummaryPage,
-    RecruitmentTrain,
-    ToastedMessage
+    // LoginPage,
+    // AboutView,
+    // NextPage,
+    // SummaryPage,
+    // RecruitmentTrain,
+    // ToastedMessage
     
 }
 }

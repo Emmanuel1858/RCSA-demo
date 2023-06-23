@@ -19,7 +19,11 @@
                         <img class="logo" src="../pictures/capture.png">
                     <input type="text" class="Role" @click="clickHandler" placeholder="Select a Profile" v-model="form.role" >
                     <ul class="displayRole" :class="displayRoleItem ? 'role-items' : 'role-items role-list-hide'">
-                        <li @click="changeRole(profile.description)" v-for="profile in profileFromBackend" v-bind:key="profile.id" > {{ profile.description  }} <img class="img" :src="profileImage(profile.description)"> </li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <li>test</li>
+                        <!-- <li @click="changeRole(profile.description)" v-for="profile in profileFromBackend" v-bind:key="profile.id" > {{ profile.description  }} <img class="img" :src="profileImage(profile.description)"> </li> -->
                     </ul> 
     
                     <!-- <div>
@@ -37,12 +41,12 @@
     
                     <div class="username">
                     <label class="label">Username</label>
-                    <input id="input" @click="focusInputUser" class="input" type="text" ref="name" placeholder="Input Username" v-model="form.username">
+                    <input id="input"  class="input" type="text" ref="name" placeholder="Input Username" v-model="form.username">
                     </div>
     
                     <div class="password">
                         <label class="label">Password</label>
-                        <input id="inputs" @click="focusInputPass" class="input input-pass" type="password" ref="pass" placeholder="Input Password" v-model="form.password">
+                        <input id="inputs" class="input input-pass" type="password" ref="pass" placeholder="Input Password" v-model="form.password">
                     </div>
     
                     <div class="forgot">
@@ -99,17 +103,11 @@
             methods: {
     
                 
-                clickHandler() {
-                    debugger;
-                    this.displayRoleItem = true
-                    
-                }, 
+                clickHandler() { this.displayRoleItem = !this.displayRoleItem; }, 
     
                 changeRole(role_value) {
                     this.form.role = role_value
-                    this.displayRoleItem = false;   
-                    
-                   
+                    this.displayRoleItem = false;      
                 },
 
                 
@@ -130,11 +128,7 @@
                     this.$router.push('/about')
                 }, 2000)
                 console.log(login)
-               
-
-                
-                
-    
+       
                 },
 
                 profileImage(description) {

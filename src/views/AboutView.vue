@@ -1,5 +1,5 @@
 <template>
-  <div @click="closeRoll" class="container">
+  <div  class="container">
     <nav>
       <div class="nav-container">
         <div class="nav-left">
